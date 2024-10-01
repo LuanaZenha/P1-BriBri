@@ -1,0 +1,160 @@
+@import url('https://fonts.cdnfonts.com/css/warcraft'); 
+
+/* Estilos para exibir as cartas lado a lado */
+#card-list, #favorites {
+    display: flex; /* Utiliza flexbox para dispor os itens em linha */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço */
+    gap: 15px; /* Espaço entre os itens */
+}
+
+.card {
+    border: 1px solid #ccc; /* Borda cinza clara ao redor das cartas */
+    padding: 10px; /* Espaçamento interno de 10 pixels */
+    margin: 10px; /* Espaçamento externo de 10 pixels */
+    width: 150px; /* Largura fixa de 150 pixels para cada carta */
+    background-color: transparent; /* Remove fundo branco das cartas */
+    color: transparent; /* Faz com que o texto tenha a mesma cor do fundo */
+}
+
+.favorites {
+    background-color: transparent; /* Remove fundo branco das cartas favoritas */
+}
+
+/* Estilos do botão "carregar mais cartas" */
+#load-more {
+    display: block; /* Exibe o botão como um bloco */
+    margin: 20px auto; /* Centraliza o botão com margem superior de 20 pixels */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #3f3f3f; /* Fundo escuro do botão */
+    color: #f8d898; /* Cor dourada para o texto do botão */
+    border: 3px solid #d4af37; /* Borda dourada ao redor do botão */
+    border-radius: 20px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    font-weight: bold; /* Torna o texto em negrito */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra ao redor do botão */
+    text-shadow: 1px 1px 2px #000; /* Sombra no texto do botão */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Transição suave ao alterar propriedades */
+}
+
+#load-more:hover {
+    background-color: #4c4c4c; /* Muda para um fundo mais claro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco o botão ao passar o mouse */
+}
+
+/* Estilos globais */
+body {
+    background-image: url('fundo.jpg'); /* Define uma imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Imagem de fundo fixa durante o scroll */
+    font-family: 'warcraft', sans-serif;
+}
+
+/* Estilo para o conteúdo para melhor visibilidade no fundo */
+h1 {
+    text-align: center; /* Centraliza o título */
+    color: #333; /* Cor do texto do título */
+    background-color: transparent; /* Remove fundo branco do título */
+    text-shadow: 2px 2px 5px rgba(173, 216, 230, 0.8); /* Sombreado em cor de gelo */
+    font-size: 6em; /* Aumenta o tamanho do título */
+}
+
+h2 {
+    text-align: center; /* Centraliza o subtítulo */
+    color: #333; /* Cor do texto do subtítulo */
+    background-color: transparent; /* Remove fundo branco do subtítulo */
+    text-shadow: 2px 2px 5px rgba(173, 216, 230, 0.8); /* Sombreado em cor de gelo */
+}
+
+.card {
+    border: 1px solid #ccc; /* Borda cinza clara ao redor das cartas */
+    border-radius: 5%; /* Bordas levemente arredondadas das cartas */
+    padding: 10px; /* Espaçamento interno de 10 pixels */
+    margin: 10px; /* Espaçamento externo de 10 pixels */
+    width: 150px; /* Largura fixa de 150 pixels para cada carta */
+    text-align: center; /* Centraliza o texto dentro da carta */
+    background-color: transparent; /* Remove fundo branco das cartas */
+}
+
+.favorites {
+    background-color: transparent; /* Remove fundo branco das cartas favoritas */
+}
+
+/* Estilo dos botões */
+button {
+    display: block; /* Exibe o botão como um bloco */
+    margin: 20px auto; /* Centraliza o botão com margem superior de 20 pixels */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #3f3f3f; /* Fundo escuro do botão */
+    color: #f8d898; /* Cor dourada para o texto do botão */
+    border: 3px solid #d4af37; /* Borda dourada ao redor do botão */
+    border-radius: 20px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    font-weight: bold; /* Torna o texto em negrito */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra ao redor do botão */
+    text-shadow: 1px 1px 2px #000; /* Sombra no texto do botão */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Transição suave ao alterar propriedades */
+}
+
+button:hover {
+    background-color: #4c4c4c; /* Muda para um fundo mais claro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco o botão ao passar o mouse */
+}
+
+
+input {
+    display: block; /* Exibe o campo de entrada como um bloco */
+    margin: 20px auto; /* Centraliza o campo de entrada com margem superior de 20 pixels */
+    padding: 10px; /* Espaçamento interno do campo de entrada */
+    width: 15%; /* Largura fixa de 15% da tela */
+    border: 2px solid #d4af37; /* Borda dourada ao redor do campo de entrada */
+    border-radius: 10px; /* Bordas arredondadas do campo de entrada */
+    background-color: #3f3f3f; /* Fundo escuro do campo de entrada */
+    color: #f8d898; /* Texto dourado */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Sombra ao redor do campo de entrada */
+    font-size: 14px; /* Tamanho da fonte do campo de entrada */
+    font-weight: bold; /* Torna o texto em negrito */
+    text-align: center; /* Centraliza o texto dentro do campo de entrada */
+}
+
+input::placeholder {
+    color: #f8d898; /* Cor da barra de procura dourada */
+}
+
+input:focus {
+    outline: none; /* Remove contorno padrão ao focar */
+    background-color: #4c4c4c; /* Fundo mais claro ao focar no campo de entrada */
+}
+
+/* Estilos do pop up */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1; /* Fica em cima de outros elementos */
+    left: 0; /* Alinha à esquerda */
+    top: 0; /* Alinha ao topo */
+    width: 100%; /* Largura total da tela */
+    height: 100%; /* Altura total da tela */
+    overflow: auto; /* Ativa a rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
+}
+
+.modal-content {
+    margin: 15% auto; /* Margem superior de 15% e centralizado */
+    width: 30%; /* Largura do pop up (ajuste conforme necessário) */
+    text-align: center; /* Centraliza o texto dentro do modal */
+}
+
+.modal-content img {
+    width: 100%; /* Ajusta a imagem para a largura do pop up */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Efeito ao passar o mouse sobre as cartas */
+.card:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho da carta ao passar o mouse */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7); /* Adiciona uma sombra maior ao redor da carta */
+    opacity: 0.9; /* Diminui a opacidade um pouco ao passar o mouse */
+}

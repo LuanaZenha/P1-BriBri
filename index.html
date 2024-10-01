@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <link href="https://fonts.cdnfonts.com/css/warcraft" rel="stylesheet">
+                
+    <link rel="icon" href="favicon.png" type="image/png"> 
+    <title>Hearthstone Card Deck</title> 
+</head>
+<body>
+    <center><h1>Hearthstone Card Deck</h1></center>
+    <input type="text" id="search" placeholder="Procurar cartas"> <!-- Campo de texto para buscar cartas, com um texto de exemplo -->
+    <div id="card-list"></div> <!-- Div que servirá para listar as cartas encontradas -->
+    <button id="load-more">Carregar Mais Cartas</button> <!-- Botão para carregar mais cartas -->
+    <h2>Meu Deck</h2> <!-- Título secundário para a seção do deck do usuário -->
+    <div id="favorites"></div> <!-- Div que exibirá as cartas favoritas do usuário -->
+
+    <div id="card-modal" class="modal"> <!-- Modal que será usado para exibir detalhes da carta -->
+        <div class="modal-content"> <!-- Conteúdo do pop up-->
+            <span class="close" id="close-modal">&times;</span> <!-- Botão para fechar o pop up -->
+            <h3 id="modal-card-name"></h3> <!-- Título para o nome da carta no pop up -->
+            <img id="modal-card-image" src="" alt="" width="100"> <!-- Imagem da carta que será exibida no pop up -->
+        </div>
+    </div>
+    
+
+</body>
+<script src="script.js"></script> 
+</html>
